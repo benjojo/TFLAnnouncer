@@ -12,4 +12,4 @@ You will need `sox`, `aplay` and `curl` to make this work, to install them run
 
 Then install it as a crontab similar to
 
-`41,44,47,50,53,56,59	7	*	*	1,2,3,4,5	python /root/reader.py`
+`41,44,47,50,53,56,59	7	*	*	1,2,3,4,5	python /root/TFLAnnouncer/run.sh`
