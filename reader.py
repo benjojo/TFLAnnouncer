@@ -8,7 +8,7 @@ nextline = 0
 for x in xmllines:
     if nextline == 1:
         bits = x.split(" ")
-        if bits[1] == "Bank" || bits[1] == "Stratford International":
+        if bits[1] == "Bank" or bits[1] == "Stratford International":
             print x
             c = 0
             for bit in bits:
