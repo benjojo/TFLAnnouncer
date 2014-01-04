@@ -20,8 +20,8 @@ for x in xmllines:
                         if minstogo < 10:
                             # We are safe for now
                             # since we can just sox some single diget things into one
-                            os.system("sox voice/intro.wav voice/"+str(minstogo)+".wav voice/mins.wav wat.wav")
-                            os.system("aplay wat.wav")
+                            os.system("sox voice/intro.wav voice/"+str(minstogo)+".wav voice/mins.wav tmp/wat.wav")
+                            os.system("aplay tmp/wat.wav")
         nextline = 0
     if "<div id=\"line1\">" in x:
         nextline = 1
