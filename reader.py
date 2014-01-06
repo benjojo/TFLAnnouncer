@@ -17,10 +17,10 @@ for x in xmllines:
                     if bit.isdigit():
                         print bit
                         minstogo = int(bit)
-                        if minstogo < 10:
+                        if minstogo == 10 or minstogo == 5 or minstogo == 3 or minstogo == 2 or minstogo == 1:
                             # We are safe for now
                             # since we can just sox some single diget things into one
-                            os.system("sox voice/intro.wav voice/"+str(minstogo)+".wav voice/mins.wav tmp/wat.wav")
+                            os.system("sox voice/rainbowdash/intro.wav voice/rainbowdash/"+str(minstogo)+".wav voice/rainbowdash/mins.wav tmp/wat.wav")
                             os.system("aplay tmp/wat.wav")
         nextline = 0
     if "<div id=\"line1\">" in x:
